@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mummy Mask 3D Viewer</title>
-  <script type="module"
-          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-  </script>
+  <meta charset="UTF-8">
+  <title>Visor 3D - Mummy Mask</title>
   <style>
-    body { margin:0; background:#000;
-           display:flex; justify-content:center; align-items:center;
-           height:100vh; }
-    model-viewer { width:90vw; height:90vh; }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   </style>
 </head>
 <body>
-  <model-viewer src="M2_T5_Exportacion.obj"
-                alt="Mummy Mask 3D"
-                camera-controls
-                auto-rotate
-                environment-image="neutral"
-                skybox-image="neutral"
-                exposure="1.1"
-                shadow-intensity="1">
-  </model-viewer>
+  <iframe src="https://3dviewer.net/#model=https://raw.githubusercontent.com/albagbouza/MummyMask_AlbaGarciaBouza/main/M2_T5_Exportacion.obj"></iframe>
 </body>
 </html>
-
